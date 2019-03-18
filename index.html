@@ -9,16 +9,28 @@
     
 </head>
 <body>
+    <header class="dark-box">
+        <div class="fancy-border fl"></div>
+        <h1>In a Giphy!</h1>
+        <div class="fancy-border fr"></div>
+    </header>
     <div class="container">
-        <div id="animal-container" class="col">
-            <div id="topic-buttons">Buttons: </div>
-            <div id="topics">Topics: </div>
-        </div>
-        
-        <div id="animal-form" class="col">
-            <label for="topic-input">Add a Topic: </label>
+        <div id="topic-form" class="col dark-box">
+            <div class="box-header">
+                <label for="topic-input"><h2>Add a Topic:</h2> </label>
+            </div>
             <input id="topic-input" type="text" name="addTopic">
             <button id="create-button">Submit</button>
+        </div>
+        <div id="main-container" class="col dark-box">
+            <div class="box-header">
+                <h2>Buttons:</h2>
+            </div>
+            <div id="topic-buttons" class="dark-box"></div>
+            <div class="box-header">
+                <h2>Topics:</h2>
+            </div>
+            <div id="topics" class="topics"></div>
         </div>
     </div>
 

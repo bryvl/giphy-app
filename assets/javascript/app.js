@@ -35,15 +35,17 @@ $('#topic-buttons').on("click", ".topic-btn", function() {
     }).then(function(response){
         var results = response.data;
         console.log(response);
+
         //Group the Div's from a particular search
         var topicContainer = $("<div class='topic-container'>");
         var topicHeader = $("<div class='topic-header'>" + topic + "</div>");
         topicContainer.append(topicHeader);
 
+        //Loop through returned imgs, give them attributes, append them to proper container
         for(var i = 0; i < results.length; i++) {
             
-            var topicDiv = $('<div>');
-            var p = $("<p>").text("Rating: " + results[i].rating);
+            var topicDiv = $('<div class="topic-box">');
+            var p = $("<p class='rating'>").text("Rating: " + results[i].rating);
             var stillImg = results[i].images.fixed_height_still.url;
             var animImg = results[i].images.fixed_height.url;
             //gif img
@@ -60,7 +62,7 @@ $('#topic-buttons').on("click", ".topic-btn", function() {
 
             
             $('#topics').prepend(topicContainer);
-            $("#topics").prepend(topicDiv);
+            $(topicContainer).append(topicDiv);
             
         }
         $('.gif').on('click', function(){
