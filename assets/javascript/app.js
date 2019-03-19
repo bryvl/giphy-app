@@ -1,4 +1,4 @@
-var topics = ['mars', 'black holes', 'galaxies', 'supernovas'];
+var topics = ['mars', 'black holes', 'galaxies', 'supernovas', 'cosmos', 'andromeda', 'sun'];
 
 makeBtn();
 
@@ -27,7 +27,7 @@ $('#topic-buttons').on("click", ".topic-btn", function() {
     var topic = $(this).attr('data-topic');
 
     //build query url
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=byQSUXKSdCCsTNdu457PiiLP8PfFJUOQ&limit=4";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=byQSUXKSdCCsTNdu457PiiLP8PfFJUOQ&limit=10";
     //promise for the data-topic of the button clicked
     $.ajax({
         url: queryURL,
