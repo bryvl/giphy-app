@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #000;
+    background-color: #222;
     color: white;
     width: 100%;
     padding: 0;
@@ -16,14 +16,43 @@ header {
     margin: 0 0 50px 0;
     /* padding-top: 50px; */
 
-    border: 1px solid rgb(226, 43, 73);
+    border: 1px solid #A342E9;
 
     text-align: center;
 }
 
+#topic-create {
+    margin: 0 50px;
+}
+#topic-input {
+    line-height:3;
+    width: 80%;
+}
+
+#topic-form {
+    border: 1px solid #A342E9;
+}
+
+#create-button {
+    height: 40px;
+    width: 50px;
+     
+    background: linear-gradient(45deg, rgb(153, 51, 255) 0%, rgb(255, 102, 102) 100%);
+    background-image: linear-gradient(45deg, rgb(153, 51, 255) 0%, rgb(255, 102, 102) 100%);
+
+    color: white;
+
+    border-style: none;
+}
+
+
 .dark-box {
     background-color: #222;
     color: white;
+}
+
+.purple-border {
+    border: 1px solid #A342E9;
 }
 
 .fancy-border {
@@ -49,17 +78,20 @@ header h1 {
 
 .box-header {
     margin-bottom: 25px;
-    background-color: rgb(226, 43, 73);
+    background-color: #D254A7;
     color: white;
     border: 1px solid black;
 }
 
 
+
+
+
 /* javascript class styles */
 .topic-btn {
     background-color: #333;
-    color: rgb(226, 43, 73);
-    border: 1px solid rgb(226, 43, 73);
+    color: #FA6372;
+    border: 1px solid #FA6372;
     border-radius: 2px;
     text-align: center;
     font-size: 1.25rem;
@@ -68,21 +100,21 @@ header h1 {
 }
 .topic-container {
     width: 90%;
-    border: 1px solid rgb(226, 43, 73);
+    border: 1px solid #A342E9;
     border-radius: 2px;
     color: white;
     margin: 10px auto 0 auto;
 }
 
 .topic-header {
-    background-color: rgb(226, 43, 73);
+    background-color: #D254A7;
     color: white;
     text-align: center;
     font-size: 1.25rem;
 }
 
 .topic-box {
-    border: 1px solid rgb(255, 102, 102);
+    border: 1px solid #A342E9;
 }
 .rating {
     background-color: rgb(255, 102, 102);
@@ -97,7 +129,6 @@ header h1 {
     float: left;
     width: 49%;
     height: 500px;
-    border: 1px solid rgb(226, 43, 73);
     border-radius: 5px;
     margin: 3px;
 }
@@ -109,6 +140,7 @@ header h1 {
     }
     #main-container {
         width: 100%;
+        height: auto;
     }
 
 
